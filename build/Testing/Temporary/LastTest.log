@@ -1,0 +1,30 @@
+Start testing: Feb 26 11:37 EET
+----------------------------------------------------------
+1/1 Testing: BasicTasksTests
+1/1 Test: BasicTasksTests
+Command: "/home/mitri/GitProjects/C-_Portfolio/build/tests"
+Directory: /home/mitri/GitProjects/C-_Portfolio/build
+"BasicTasksTests" start time: Feb 26 11:37 EET
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from BasicTasksTest
+[ RUN      ] BasicTasksTest.ReverseString
+[       OK ] BasicTasksTest.ReverseString (0 ms)
+[ RUN      ] BasicTasksTest.CheckPalindrome
+[       OK ] BasicTasksTest.CheckPalindrome (0 ms)
+[----------] 2 tests from BasicTasksTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BasicTasksTests" end time: Feb 26 11:37 EET
+"BasicTasksTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 26 11:37 EET

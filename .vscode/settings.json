@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.geojson": "json",
+        "*.tcc": "cpp"
+    }
+}

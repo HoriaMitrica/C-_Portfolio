@@ -1,0 +1,39 @@
+#include <iostream>
+#include "BasicTasks/BasicTasks.h" // Updated include path
+
+using namespace std;
+
+void showMenu() {
+    cout << "\nSelect a category:" << endl;
+    cout << "1. Basic C++ Tasks" << endl;
+    cout << "2. Exit" << endl;
+    cout << "Enter your choice: ";
+}
+
+void basicTaskMenu() {
+    cout << "\nSelect a task:" << endl;
+    cout << "1. Reverse a String" << endl;
+    cout << "2. Check Palindrome" << endl;
+    cout << "3. Go Back" << endl;
+    cout << "Enter your choice: ";
+}
+
+int main() {
+    int choice;
+    while (true) {
+        showMenu();
+        cin >> choice;
+        if (choice == 2) break;
+
+        if (choice == 1) {
+            int taskChoice;
+            basicTaskMenu();
+            cin >> taskChoice;
+            if (taskChoice == 1) reverseString();
+            else if (taskChoice == 2) checkPalindrome();
+        } else {
+            cout << "Invalid choice. Try again." << endl;
+        }
+    }
+    return 0;
+}
