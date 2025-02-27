@@ -1,5 +1,6 @@
 # Ignore build directory
 /build/
+/Testing/Temporary
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
