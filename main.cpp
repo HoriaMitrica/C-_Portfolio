@@ -8,26 +8,40 @@
 #include "BasicTasks/BasicTasks.h"
 #include "Classes/ConsoleManager.h"
 #include "Classes/MenuManager.h"
+#include "Classes/InputManager.h"
 #include "imgui_impl_opengl3.h"
 
 GLFWwindow *window;
 MenuManager menuManager;
 char userInput[256] = "";
 
-void processUserInput() {
+void processUserInput()
+{
     std::string inputStr(userInput);
     ConsoleManager::log("User entered: " + inputStr);
-    menuManager.handleSelection(std::stoi(inputStr));
+
+    if (InputManager::isWaitingForInput())
+    {
+        InputManager::handleInput(inputStr);
+    }
+    else
+    {
+        menuManager.handleSelection(std::stoi(inputStr));
+    }
+
     userInput[0] = '\0';
 }
 
-void setupOpenGL(GLFWwindow *&window) {
-    if (!glfwInit()) {
+void setupOpenGL(GLFWwindow *&window)
+{
+    if (!glfwInit())
+    {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         exit(EXIT_FAILURE);
     }
     window = glfwCreateWindow(800, 600, "C++ Practical Tasks GUI", nullptr, nullptr);
-    if (!window) {
+    if (!window)
+    {
         std::cerr << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         exit(EXIT_FAILURE);
@@ -35,9 +49,10 @@ void setupOpenGL(GLFWwindow *&window) {
     glfwMakeContextCurrent(window);
 }
 
-int main() {
+int main()
+{
     setupOpenGL(window);
-    
+
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
@@ -47,7 +62,8 @@ int main() {
 
     menuManager.setMenu("main");
 
-    while (!glfwWindowShouldClose(window)) {
+    while (!glfwWindowShouldClose(window))
+    {
         glfwPollEvents();
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
@@ -56,7 +72,8 @@ int main() {
         ImGui::SetNextWindowSize(ImVec2(640, 600));
         ImGui::SetNextWindowPos(ImVec2(160, 0));
         ImGui::Begin("Console Output", nullptr, ImGuiWindowFlags_NoCollapse);
-        for (const auto &line : ConsoleManager::getConsoleOutput()) {
+        for (const auto &line : ConsoleManager::getConsoleOutput())
+        {
             ImGui::TextUnformatted(line.c_str());
         }
         ImGui::End();
@@ -65,21 +82,28 @@ int main() {
         ImGui::SetNextWindowPos(ImVec2(0, 0));
         ImGui::Begin("Controls", nullptr, ImGuiWindowFlags_NoCollapse);
 
-        if (ImGui::Button("Main Menu")) {
+        if (ImGui::Button("Main Menu"))
+        {
             menuManager.setMenu("main");
         }
-        if (ImGui::Button("Clear Console")) {
-            ConsoleManager::log(""); 
+        if (ImGui::Button("Clear Console"))
+        {
+            ConsoleManager::log("");
             menuManager.displayMenu();
         }
-        if (ImGui::Button("Run Tests")) {
+        if (ImGui::Button("Run Tests"))
+        {
             ConsoleManager::log("Running Tests...");
             FILE *pipe = popen("ctest --verbose", "r");
-            if (!pipe) {
+            if (!pipe)
+            {
                 ConsoleManager::log("Failed to execute tests.");
-            } else {
+            }
+            else
+            {
                 char buffer[256];
-                while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+                while (fgets(buffer, sizeof(buffer), pipe) != nullptr)
+                {
                     ConsoleManager::log(buffer);
                 }
                 pclose(pipe);
@@ -89,7 +113,8 @@ int main() {
 
         ImGui::Text("Enter command:");
         ImGui::InputText("##input", userInput, sizeof(userInput));
-        if (ImGui::Button("Submit")) {
+        if (ImGui::Button("Submit"))
+        {
             processUserInput();
         }
 

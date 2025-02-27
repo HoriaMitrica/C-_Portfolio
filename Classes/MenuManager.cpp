@@ -1,5 +1,6 @@
 #include "MenuManager.h"
 #include "ConsoleManager.h"
+#include "InputManager.h"
 #include "../BasicTasks/BasicTasks.h"
 
 MenuManager::MenuManager()
@@ -10,6 +11,10 @@ MenuManager::MenuManager()
 
 void MenuManager::initializeMenus()
 {
+
+    InputManager::setMenuRefreshCallback([this]()
+                                         { displayMenu(); });
+
     menus["main"] = Menu("Main Menu",
                          {"Basic C++ Tasks", "Exit"},
                          {[this]()
@@ -44,17 +49,10 @@ void MenuManager::setMenu(const std::string &name)
 
 void MenuManager::displayMenu()
 {
-    if (menus.find(currentMenu) != menus.end())
+    ConsoleManager::log("===== " + menus[currentMenu].title + " =====");
+    for (size_t i = 0; i < menus[currentMenu].options.size(); i++)
     {
-        ConsoleManager::log("===== " + menus[currentMenu].title + " =====");
-        for (size_t i = 0; i < menus[currentMenu].options.size(); i++)
-        {
-            ConsoleManager::log(std::to_string(i + 1) + ". " + menus[currentMenu].options[i]);
-        }
-    }
-    else
-    {
-        ConsoleManager::log("Error: Cannot display menu.");
+        ConsoleManager::log(std::to_string(i + 1) + ". " + menus[currentMenu].options[i]);
     }
 }
 

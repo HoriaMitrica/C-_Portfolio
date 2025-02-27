@@ -15,6 +15,8 @@ add_executable(main
     Classes/Menu.cpp
     Classes/ConsoleManager.cpp
     Classes/MenuManager.cpp
+    Classes/InputManager.cpp
+    
     external/imgui/imgui.cpp
     external/imgui/imgui_draw.cpp
     external/imgui/imgui_widgets.cpp
