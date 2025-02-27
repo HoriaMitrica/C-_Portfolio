@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o"
   "CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o.d"
+  "CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o"
+  "CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o.d"
+  "CMakeFiles/main.dir/Classes/Menu.cpp.o"
+  "CMakeFiles/main.dir/Classes/Menu.cpp.o.d"
+  "CMakeFiles/main.dir/Classes/MenuManager.cpp.o"
+  "CMakeFiles/main.dir/Classes/MenuManager.cpp.o.d"
   "CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o"
   "CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o.d"
   "CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"

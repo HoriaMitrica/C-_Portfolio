@@ -1,10 +1,9 @@
 #ifndef BASICTASKS_H
 #define BASICTASKS_H
 
-#include <string>  // Ensure string is included
-using namespace std;
+#include <string>
 
-string reverseString(const string &input);
-bool checkPalindrome(const string &input);
+void reverseString(); // Updated to take input dynamically
+void checkPalindrome(); // Now returns void
 
 #endif

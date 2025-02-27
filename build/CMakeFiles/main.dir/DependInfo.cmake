@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mitri/GitProjects/C-_Portfolio/BasicTasks/BasicTasks.cpp" "CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o" "gcc" "CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o.d"
+  "/home/mitri/GitProjects/C-_Portfolio/Classes/ConsoleManager.cpp" "CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o" "gcc" "CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o.d"
+  "/home/mitri/GitProjects/C-_Portfolio/Classes/Menu.cpp" "CMakeFiles/main.dir/Classes/Menu.cpp.o" "gcc" "CMakeFiles/main.dir/Classes/Menu.cpp.o.d"
+  "/home/mitri/GitProjects/C-_Portfolio/Classes/MenuManager.cpp" "CMakeFiles/main.dir/Classes/MenuManager.cpp.o" "gcc" "CMakeFiles/main.dir/Classes/MenuManager.cpp.o.d"
   "/home/mitri/GitProjects/C-_Portfolio/OOPTasks/OOPTasks.cpp" "CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o" "gcc" "CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o.d"
   "/home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_glfw.cpp" "CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d"
   "/home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_opengl3.cpp" "CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o" "gcc" "CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d"

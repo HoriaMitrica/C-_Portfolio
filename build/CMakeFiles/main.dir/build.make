@@ -111,10 +111,52 @@ CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitri/GitProjects/C-_Portfolio/OOPTasks/OOPTasks.cpp -o CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.s
 
+CMakeFiles/main.dir/Classes/Menu.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Classes/Menu.cpp.o: /home/mitri/GitProjects/C-_Portfolio/Classes/Menu.cpp
+CMakeFiles/main.dir/Classes/Menu.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/Classes/Menu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Classes/Menu.cpp.o -MF CMakeFiles/main.dir/Classes/Menu.cpp.o.d -o CMakeFiles/main.dir/Classes/Menu.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/Classes/Menu.cpp
+
+CMakeFiles/main.dir/Classes/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/Classes/Menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mitri/GitProjects/C-_Portfolio/Classes/Menu.cpp > CMakeFiles/main.dir/Classes/Menu.cpp.i
+
+CMakeFiles/main.dir/Classes/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/Classes/Menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitri/GitProjects/C-_Portfolio/Classes/Menu.cpp -o CMakeFiles/main.dir/Classes/Menu.cpp.s
+
+CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o: /home/mitri/GitProjects/C-_Portfolio/Classes/ConsoleManager.cpp
+CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o -MF CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o.d -o CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/Classes/ConsoleManager.cpp
+
+CMakeFiles/main.dir/Classes/ConsoleManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/Classes/ConsoleManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mitri/GitProjects/C-_Portfolio/Classes/ConsoleManager.cpp > CMakeFiles/main.dir/Classes/ConsoleManager.cpp.i
+
+CMakeFiles/main.dir/Classes/ConsoleManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/Classes/ConsoleManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitri/GitProjects/C-_Portfolio/Classes/ConsoleManager.cpp -o CMakeFiles/main.dir/Classes/ConsoleManager.cpp.s
+
+CMakeFiles/main.dir/Classes/MenuManager.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Classes/MenuManager.cpp.o: /home/mitri/GitProjects/C-_Portfolio/Classes/MenuManager.cpp
+CMakeFiles/main.dir/Classes/MenuManager.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/Classes/MenuManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/Classes/MenuManager.cpp.o -MF CMakeFiles/main.dir/Classes/MenuManager.cpp.o.d -o CMakeFiles/main.dir/Classes/MenuManager.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/Classes/MenuManager.cpp
+
+CMakeFiles/main.dir/Classes/MenuManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/Classes/MenuManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mitri/GitProjects/C-_Portfolio/Classes/MenuManager.cpp > CMakeFiles/main.dir/Classes/MenuManager.cpp.i
+
+CMakeFiles/main.dir/Classes/MenuManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/Classes/MenuManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mitri/GitProjects/C-_Portfolio/Classes/MenuManager.cpp -o CMakeFiles/main.dir/Classes/MenuManager.cpp.s
+
 CMakeFiles/main.dir/external/imgui/imgui.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/imgui.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui.cpp
 CMakeFiles/main.dir/external/imgui/imgui.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/main.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/main.dir/external/imgui/imgui.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui.cpp
 
 CMakeFiles/main.dir/external/imgui/imgui.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/main.dir/external/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_draw.cpp
 CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_draw.cpp
 
 CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_widgets.cpp
 CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_widgets.cpp
 
 CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_tables.cpp
 CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/imgui_tables.cpp
 
 CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/main.dir/external/imgui/imgui_tables.cpp.s: cmake_force
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/main.dir/external/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: /home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/mitri/GitProjects/C-_Portfolio/external/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/main.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -200,6 +242,9 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
 "CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o" \
 "CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o" \
+"CMakeFiles/main.dir/Classes/Menu.cpp.o" \
+"CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o" \
+"CMakeFiles/main.dir/Classes/MenuManager.cpp.o" \
 "CMakeFiles/main.dir/external/imgui/imgui.cpp.o" \
 "CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o" \
 "CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o" \
@@ -213,6 +258,9 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main.cpp.o
 main: CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.o
 main: CMakeFiles/main.dir/OOPTasks/OOPTasks.cpp.o
+main: CMakeFiles/main.dir/Classes/Menu.cpp.o
+main: CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o
+main: CMakeFiles/main.dir/Classes/MenuManager.cpp.o
 main: CMakeFiles/main.dir/external/imgui/imgui.cpp.o
 main: CMakeFiles/main.dir/external/imgui/imgui_draw.cpp.o
 main: CMakeFiles/main.dir/external/imgui/imgui_widgets.cpp.o
@@ -223,7 +271,7 @@ main: CMakeFiles/main.dir/build.make
 main: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 main: /usr/lib/x86_64-linux-gnu/libGL.so
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

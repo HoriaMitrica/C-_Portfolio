@@ -12,6 +12,9 @@ add_executable(main
     main.cpp
     BasicTasks/BasicTasks.cpp
     OOPTasks/OOPTasks.cpp
+    Classes/Menu.cpp
+    Classes/ConsoleManager.cpp
+    Classes/MenuManager.cpp
     external/imgui/imgui.cpp
     external/imgui/imgui_draw.cpp
     external/imgui/imgui_widgets.cpp
@@ -24,6 +27,7 @@ add_executable(main
 target_include_directories(main PRIVATE 
     BasicTasks
     OOPTasks
+    Classes
     external/imgui
     external/imgui/backends
 )

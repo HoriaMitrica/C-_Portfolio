@@ -2,5 +2,6 @@
     "files.associations": {
         "*.geojson": "json",
         "*.tcc": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }

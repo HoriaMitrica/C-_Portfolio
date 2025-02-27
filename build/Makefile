@@ -176,6 +176,78 @@ BasicTasks/BasicTasks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/BasicTasks/BasicTasks.cpp.s
 .PHONY : BasicTasks/BasicTasks.cpp.s
 
+Classes/ConsoleManager.o: Classes/ConsoleManager.cpp.o
+.PHONY : Classes/ConsoleManager.o
+
+# target to build an object file
+Classes/ConsoleManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/ConsoleManager.cpp.o
+.PHONY : Classes/ConsoleManager.cpp.o
+
+Classes/ConsoleManager.i: Classes/ConsoleManager.cpp.i
+.PHONY : Classes/ConsoleManager.i
+
+# target to preprocess a source file
+Classes/ConsoleManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/ConsoleManager.cpp.i
+.PHONY : Classes/ConsoleManager.cpp.i
+
+Classes/ConsoleManager.s: Classes/ConsoleManager.cpp.s
+.PHONY : Classes/ConsoleManager.s
+
+# target to generate assembly for a file
+Classes/ConsoleManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/ConsoleManager.cpp.s
+.PHONY : Classes/ConsoleManager.cpp.s
+
+Classes/Menu.o: Classes/Menu.cpp.o
+.PHONY : Classes/Menu.o
+
+# target to build an object file
+Classes/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/Menu.cpp.o
+.PHONY : Classes/Menu.cpp.o
+
+Classes/Menu.i: Classes/Menu.cpp.i
+.PHONY : Classes/Menu.i
+
+# target to preprocess a source file
+Classes/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/Menu.cpp.i
+.PHONY : Classes/Menu.cpp.i
+
+Classes/Menu.s: Classes/Menu.cpp.s
+.PHONY : Classes/Menu.s
+
+# target to generate assembly for a file
+Classes/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/Menu.cpp.s
+.PHONY : Classes/Menu.cpp.s
+
+Classes/MenuManager.o: Classes/MenuManager.cpp.o
+.PHONY : Classes/MenuManager.o
+
+# target to build an object file
+Classes/MenuManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/MenuManager.cpp.o
+.PHONY : Classes/MenuManager.cpp.o
+
+Classes/MenuManager.i: Classes/MenuManager.cpp.i
+.PHONY : Classes/MenuManager.i
+
+# target to preprocess a source file
+Classes/MenuManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/MenuManager.cpp.i
+.PHONY : Classes/MenuManager.cpp.i
+
+Classes/MenuManager.s: Classes/MenuManager.cpp.s
+.PHONY : Classes/MenuManager.s
+
+# target to generate assembly for a file
+Classes/MenuManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Classes/MenuManager.cpp.s
+.PHONY : Classes/MenuManager.cpp.s
+
 OOPTasks/OOPTasks.o: OOPTasks/OOPTasks.cpp.o
 .PHONY : OOPTasks/OOPTasks.o
 
@@ -406,6 +478,15 @@ help:
 	@echo "... BasicTasks/BasicTasks.o"
 	@echo "... BasicTasks/BasicTasks.i"
 	@echo "... BasicTasks/BasicTasks.s"
+	@echo "... Classes/ConsoleManager.o"
+	@echo "... Classes/ConsoleManager.i"
+	@echo "... Classes/ConsoleManager.s"
+	@echo "... Classes/Menu.o"
+	@echo "... Classes/Menu.i"
+	@echo "... Classes/Menu.s"
+	@echo "... Classes/MenuManager.o"
+	@echo "... Classes/MenuManager.i"
+	@echo "... Classes/MenuManager.s"
 	@echo "... OOPTasks/OOPTasks.o"
 	@echo "... OOPTasks/OOPTasks.i"
 	@echo "... OOPTasks/OOPTasks.s"

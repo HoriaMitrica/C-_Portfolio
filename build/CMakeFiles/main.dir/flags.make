@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mitri/GitProjects/C-_Portfolio/BasicTasks -I/home/mitri/GitProjects/C-_Portfolio/OOPTasks -I/home/mitri/GitProjects/C-_Portfolio/external/imgui -I/home/mitri/GitProjects/C-_Portfolio/external/imgui/backends
+CXX_INCLUDES = -I/home/mitri/GitProjects/C-_Portfolio/BasicTasks -I/home/mitri/GitProjects/C-_Portfolio/OOPTasks -I/home/mitri/GitProjects/C-_Portfolio/Classes -I/home/mitri/GitProjects/C-_Portfolio/external/imgui -I/home/mitri/GitProjects/C-_Portfolio/external/imgui/backends
 
 CXX_FLAGS = -std=gnu++17
 
