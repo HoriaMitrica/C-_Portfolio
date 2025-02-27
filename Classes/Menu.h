@@ -11,7 +11,7 @@ public:
     std::vector<std::string> options;
     std::vector<std::function<void()>> actions;
 
-    Menu(); // ✅ Default constructor
+    Menu(); 
     Menu(std::string title, std::vector<std::string> options, std::vector<std::function<void()>> actions);
 
     void execute(int choice);

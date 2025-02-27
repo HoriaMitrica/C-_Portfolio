@@ -11,7 +11,7 @@ void reverseString() {
     });
 }
 
-void checkPalindrome() {
+void checkPalindrome() {    
     ConsoleManager::log("Enter a string to check for palindrome:");
 
     InputManager::requestInput([](const std::string& input) {

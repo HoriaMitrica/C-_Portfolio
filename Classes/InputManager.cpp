@@ -2,7 +2,6 @@
 #include "ConsoleManager.h"
 
 std::queue<std::function<void(const std::string &)>> InputManager::inputHandlers;
-std::function<void()> InputManager::menuRefreshCallback = nullptr; 
 
 void InputManager::requestInput(std::function<void(const std::string &)> callback)
 {
@@ -18,16 +17,6 @@ void InputManager::handleInput(const std::string &input)
         inputHandlers.pop();
         handler(input);
     }
-
-    if (inputHandlers.empty() && menuRefreshCallback)
-    {
-        menuRefreshCallback();
-    }
-}
-
-void InputManager::setMenuRefreshCallback(std::function<void()> callback)
-{
-    menuRefreshCallback = callback;
 }
 
 bool InputManager::isWaitingForInput()

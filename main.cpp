@@ -14,6 +14,7 @@
 GLFWwindow *window;
 MenuManager menuManager;
 char userInput[256] = "";
+static bool shouldFocusInput = true;
 
 void processUserInput()
 {
@@ -23,13 +24,22 @@ void processUserInput()
     if (InputManager::isWaitingForInput())
     {
         InputManager::handleInput(inputStr);
+        menuManager.displayMenu();
     }
     else
     {
-        menuManager.handleSelection(std::stoi(inputStr));
+        try
+        {
+            menuManager.handleSelection(std::stoi(inputStr) - 1);
+        }
+        catch (const std::exception &e)
+        {
+            ConsoleManager::log("Invalid input: Please enter a number");
+        }
     }
 
     userInput[0] = '\0';
+    shouldFocusInput = true;
 }
 
 void setupOpenGL(GLFWwindow *&window)
@@ -57,6 +67,8 @@ int main()
     ImGui::CreateContext();
     ImGuiIO &io = ImGui::GetIO();
     ImGui::StyleColorsDark();
+    io.FontGlobalScale = 1.5f;
+
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 130");
 
@@ -69,28 +81,47 @@ int main()
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        ImGui::SetNextWindowSize(ImVec2(640, 600));
-        ImGui::SetNextWindowPos(ImVec2(160, 0));
+        ImGui::SetNextWindowSize(ImVec2(560, 600));
+        ImGui::SetNextWindowPos(ImVec2(240, 0));
         ImGui::Begin("Console Output", nullptr, ImGuiWindowFlags_NoCollapse);
         for (const auto &line : ConsoleManager::getConsoleOutput())
         {
             ImGui::TextUnformatted(line.c_str());
         }
+        ImGui::SetScrollHereY(1.0f);
         ImGui::End();
 
-        ImGui::SetNextWindowSize(ImVec2(160, 600));
+        ImGui::SetNextWindowSize(ImVec2(240, 600));
         ImGui::SetNextWindowPos(ImVec2(0, 0));
         ImGui::Begin("Controls", nullptr, ImGuiWindowFlags_NoCollapse);
+
+        bool interactingWithButtons = false;
+
+        if (ImGui::IsItemHovered() || ImGui::IsItemActive())
+            interactingWithButtons = true;
 
         if (ImGui::Button("Main Menu"))
         {
             menuManager.setMenu("main");
+            interactingWithButtons = true;
         }
-        if (ImGui::Button("Clear Console"))
+
+        if (ImGui::IsItemHovered() || ImGui::IsItemActive())
+            interactingWithButtons = true;
+
+        if (!InputManager::isWaitingForInput())
         {
-            ConsoleManager::log("");
-            menuManager.displayMenu();
+            if (ImGui::Button("Clear Console"))
+            {
+                ConsoleManager::clear();
+                menuManager.displayMenu();
+                interactingWithButtons = true;
+            }
+
+            if (ImGui::IsItemHovered() || ImGui::IsItemActive())
+                interactingWithButtons = true;
         }
+
         if (ImGui::Button("Run Tests"))
         {
             ConsoleManager::log("Running Tests...");
@@ -109,14 +140,35 @@ int main()
                 pclose(pipe);
             }
             ConsoleManager::log("Test execution complete.");
+            interactingWithButtons = true;
         }
 
+        if (ImGui::IsItemHovered() || ImGui::IsItemActive())
+            interactingWithButtons = true;
+
         ImGui::Text("Enter command:");
-        ImGui::InputText("##input", userInput, sizeof(userInput));
-        if (ImGui::Button("Submit"))
+
+        if (shouldFocusInput && !interactingWithButtons)
+        {
+            ImGui::SetKeyboardFocusHere();
+            shouldFocusInput = false;
+        }
+
+        bool enterPressed = ImGui::InputText("##input", userInput, sizeof(userInput),
+                                             ImGuiInputTextFlags_EnterReturnsTrue);
+
+        if (ImGui::IsItemActive())
+        {
+            shouldFocusInput = false;
+        }
+
+        if (enterPressed || ImGui::Button("Submit"))
         {
             processUserInput();
         }
+
+        if (ImGui::IsItemHovered() || ImGui::IsItemActive())
+            interactingWithButtons = true;
 
         ImGui::End();
 
