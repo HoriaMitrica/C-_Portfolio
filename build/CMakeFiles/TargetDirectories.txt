@@ -1,5 +1,0 @@
-/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles/main.dir
-/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles/tests.dir
-/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles/test.dir
-/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles/edit_cache.dir
-/home/mitri/GitProjects/C-_Portfolio/build/CMakeFiles/rebuild_cache.dir
