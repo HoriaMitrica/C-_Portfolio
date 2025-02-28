@@ -14,7 +14,7 @@ private:
 
 public:
     MenuManager();
-    void initializeMenus(); // ✅ New function to create menus
+    void initializeMenus();
     void addMenu(const std::string& name, const Menu& menu);
     void setMenu(const std::string& name);
     void displayMenu();
