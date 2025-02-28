@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My C++ Application</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #303030;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #canvas {
+            width: 800px;
+            height: 600px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <script>
+        // Emscripten will replace this comment with the generated JavaScript code
+        var Module = {
+            canvas: document.getElementById('canvas'),
+            onRuntimeInitialized: function() {
+                console.log("Application loaded and ready to use!");
+            }
+        };
+    </script>
+    {{{ SCRIPT }}}
+</body>
+</html>
