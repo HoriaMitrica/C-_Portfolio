@@ -6,15 +6,17 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-    main.cpp
-    BasicTasks/BasicTasks.cpp
+    StringTasks/StringTasks.cpp
+    StringTasks/StringTasksPlugin.cpp
     OOPTasks/OOPTasks.cpp
     Classes/Menu.cpp
     Classes/ConsoleManager.cpp
+    Classes/PluginManager.cpp
+    Classes/TaskRegistry.cpp
     Classes/MenuManager.cpp
     Classes/InputManager.cpp
 )
-# Define ImGui source files
+
 set(IMGUI_SOURCES
     external/imgui/imgui.cpp
     external/imgui/imgui_draw.cpp
@@ -24,24 +26,26 @@ set(IMGUI_SOURCES
     external/imgui/backends/imgui_impl_opengl3.cpp
 )
 
-# Check if we're compiling with Emscripten
+add_library(core_lib STATIC ${SOURCES})
+target_include_directories(core_lib PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    StringTasks
+    OOPTasks
+    Classes
+)
+
 if(EMSCRIPTEN)
-    # Emscripten-specific settings
     set(CMAKE_EXECUTABLE_SUFFIX ".html")
     
-    # Add the main executable
-    add_executable(main ${SOURCES} ${IMGUI_SOURCES})
+    add_executable(main main.cpp ${IMGUI_SOURCES})
     
-    # Include directories
+    target_link_libraries(main core_lib)
+    
     target_include_directories(main PRIVATE 
-        BasicTasks
-        OOPTasks
-        Classes
         external/imgui
         external/imgui/backends
     )
     
-    # Emscripten-specific link options
     target_link_options(main PRIVATE
         -sUSE_GLFW=3
         -sUSE_WEBGL2=1
@@ -51,19 +55,14 @@ if(EMSCRIPTEN)
         -sASYNCIFY
         -sEXPORTED_RUNTIME_METHODS=ccall,cwrap
         -sEXPORTED_FUNCTIONS=_main,_malloc,_free
-        # Add any asset directories you need to preload
-        # --preload-file assets@/assets
-        # Uncomment if you create a custom HTML shell
-         --shell-file ${CMAKE_SOURCE_DIR}/shell.html
+        --shell-file ${CMAKE_SOURCE_DIR}/shell.html
     )
 else()
+    add_executable(main main.cpp ${IMGUI_SOURCES})
     
-    add_executable(main ${SOURCES} ${IMGUI_SOURCES})
+    target_link_libraries(main core_lib)
     
     target_include_directories(main PRIVATE 
-        BasicTasks
-        OOPTasks
-        Classes
         external/imgui
         external/imgui/backends
     )
@@ -75,13 +74,10 @@ else()
     enable_testing()
     
     find_package(GTest REQUIRED)
-    include_directories(${GTEST_INCLUDE_DIRS})
     
-    add_executable(tests 
-        tests/BasicTasks.cpp
-    )
+    add_executable(tests tests/StringTasks.cpp)
     
-    target_link_libraries(tests GTest::GTest GTest::Main pthread)
+    target_link_libraries(tests core_lib GTest::GTest GTest::Main pthread)
     
-    add_test(NAME BasicTasksTests COMMAND tests)
+    add_test(NAME StringTasksTests COMMAND tests)
 endif()
